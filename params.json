@@ -1,0 +1,6 @@
+{
+  "name": "ModuLR",
+  "tagline": "For all the pervs that cream at modular coding",
+  "body": "###ModuLR\r\nA open-source library for modular development in java.\r\n\r\n###Usage examples\r\nHere are just some of the many types of projects this can be used for.\r\n* Clients for overpopular games.\r\n* Chat bots or other command driven systems.\r\n* Really anything that would benefit from modularity.\r\n\r\n###Advantages of using this library\r\n* Its fast to setup and get started with.\r\n* Easy to use.\r\n* Compared to almost all other modular systems, ModuLR requiers no extenting of baseclasses or manually adding them to a list!!\r\n* More efficent workflow for you the developer.\r\n* Open-source, if you want more features or dont like how it works feel free to fork it.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
