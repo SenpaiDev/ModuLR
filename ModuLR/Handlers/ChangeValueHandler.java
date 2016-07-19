@@ -2,17 +2,16 @@ package Handlers;
 
 import Annotations.Setting;
 import Backend.Handler;
-
+import Backend.ModuleHandler;
+import Annotations.onSettingUpdate;
 import java.lang.reflect.Field;
 
 /**
  * Created by TinaSprout on 7/19/16.
  */
 public class ChangeValueHandler extends Handler {
-
-
     @Override
-    public void Handle(Object clz, String[] args) {
+    public void Handle(Object clz, String[] args, ModuleHandler moduleHandler) {
         for (Field field : clz.getClass().getFields()) {
             if (field.isAnnotationPresent(Setting.class)){
                 if (field.getAnnotation(Setting.class).settingname().equalsIgnoreCase(args[0])) {
@@ -45,7 +44,7 @@ public class ChangeValueHandler extends Handler {
                     }
                 }
                 if (args[3] != null){
-
+                    moduleHandler.Handle(moduleHandler.getModuleName(clz), onSettingUpdate.class, args);
                 }
             }
         }
